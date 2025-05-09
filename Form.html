@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Time</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+     <div class="container">
+      <img src="./assets/img_pizza7.jpeg" class="logo" />
+
+    
+
+    <section class="register-section">
+      <h1 class="register-title">Create an Account</h1>
+      
+      <form action="register.php" method="POST" class="register-form">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required />
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required />
+
+        <button type="submit" class="submit">Register</button>
+      </form>
+      </section>
+
+<a href="index.html" class="registrationButton">Back to Home</a>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>
