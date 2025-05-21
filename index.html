@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <img src="./assets/img_pizza7.jpeg" class="logo" />
+      <img src="./assets/img_pizza7.jpeg" class="logo" /> 
       <header>
         <nav class="navbar">
           <ul> 
@@ -29,41 +29,76 @@
 
       <br />
      
+      <!-- MENU  -->
 
     <section class="menu-section">
        <h2 class="menu-title">Menu</h2>
            
     <div class="menu">
+ 
+      <div class="pizza-item" data-name="MARGARITA" data-price="10.50">
 
-      <div class="pizza-item">
-        MARGARITA - <span class="price">10.50 €</span>
-    <span class="action-group">
-      <div class="simble-icon">
-      <img src="minus.png" class="minus-icon" />
-      <img src="plus.png" class="plus-icon" />
-      </div>
-    </span>
+        <h2><span class="nome"> MARGARITA</span> - <span class="price">10.50 €</span>
+          <span class="action-group">
+
+            <button class="minus-btn" aria-label="Remover 1" style="background:none; border:none; padding:0;">
+              <img src="./assets/minus.png" class="minus-icon" style="width:24px; height:24px;" alt="Menos">
+            </button>
+
+            <button class="plus-btn" aria-label="Adicionar 1" style="background:none; border:none; padding:0;">
+              <img src="./assets/plus.png" class="plus-icon" style="width:24px; height:24px;" alt="Mais">
+            </button>
+      </span>
   </h2>
         <div class="ingredients">Tomato Sauce, Mozzarella, basil, Olives</div> 
         
       </div>
       <br>
 
-      <div class="pizza-item">
-        <h2>PESTO - <span class="price">11.50 €</span></h2>
+      <div class="pizza-item" data-name="PESTO" data-price="11.50">
+        <h2><span class="nome"> PESTO</span>- <span class="price">11.50 €</span>
+          <span class="action-group">
+
+            <button class="minus-btn" aria-label="Remover 1" style="background:none; border:none; padding:0;">
+              <img src="./assets/minus.png" class="minus-icon" style="width:24px; height:24px;" alt="Menos">
+            </button>
+
+            <button class="plus-btn" aria-label="Adicionar 1" style="background:none; border:none; padding:0;">
+              <img src="./assets/plus.png" class="plus-icon" style="width:24px; height:24px;" alt="Mais">
+            </button>
+      </span>
+        </h2>
         <div class="ingredients">Tomato Sauce, Mozzarella, Olives, Pesto</div>
       </div>
        <br>
 
       <div class="pizza-item">
-        <h2>ONION & PEPPER - <span class="price">12.50 €</span></h2>
+        <h2>ONION & PEPPER - <span class="price">12.50 €</span>
+          <span class="action-group">
+            <button class="minus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/minus.png" class="minus-icon" style="width:24px; height:24px;" alt="Menos">
+            </button>
+            <button class="plus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/plus.png" class="plus-icon" style="width:24px; height:24px;" alt="Mais">
+            </button>
+      </span>
+        </h2>
         <div class="ingredients">
           Tomato Sauce, Mozzarella, Olives, Onions, Bell Peppers </div>
       </div>
        <br>
 
       <div class="pizza-item">
-        <h2>CHEESE & HAM - <span class="price">13.00 €</span></h2>
+        <h2>CHEESE & HAM - <span class="price">13.00 €</span>
+          <span class="action-group">
+            <button class="minus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/minus.png" class="minus-icon" style="width:24px; height:24px;" alt="Menos">
+            </button>
+            <button class="plus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/plus.png" class="plus-icon" style="width:24px; height:24px;" alt="Mais">
+            </button>
+      </span>
+        </h2>
         <div class="ingredients">
           Fresh cream cheese, Mozzarella, Ham, Spring onions</div>
       </div>
@@ -71,7 +106,16 @@
 
 
       <div class="pizza-item">
-        <h2>QUEEN - <span class="price">13.50 €</span></h2>
+        <h2>QUEEN - <span class="price">13.50 €</span>
+          <span class="action-group">
+            <button class="minus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/minus.png" class="minus-icon" style="width:24px; height:24px;" alt="Menos">
+            </button>
+            <button class="plus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/plus.png" class="plus-icon" style="width:24px; height:24px;" alt="Mais">
+            </button>
+      </span>
+        </h2>
         <div class="ingredients">
           Tomato Sauce, Mozzarella, Olives, Ham, Fresh Mushrooms
         </div>
@@ -79,7 +123,16 @@
       <br>
 
       <div class="pizza-item">
-        <h2>VEGETARIAN - <span class="price">13.50 €</span></h2>
+        <h2>VEGETARIAN - <span class="price">13.50 €</span>
+          <span class="action-group">
+            <button class="minus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/minus.png" class="minus-icon" style="width:24px; height:24px;" alt="Menos">
+            </button>
+            <button class="plus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/plus.png" class="plus-icon" style="width:24px; height:24px;" alt="Mais">
+            </button>
+      </span>
+        </h2>
         <div class="ingredients">
           Sauce Tomato, Mozzarella, Olives, Eggplant, zucchini, bell peppers
         </div>
@@ -87,16 +140,33 @@
       <br>
 
       <div class="pizza-item">
-        <h2>CHICKEN CURRY - <span class="price">13.80 €</span></h2>
+        <h2>CHICKEN CURRY - <span class="price">13.80 €</span>
+          <span class="action-group">
+            <button class="minus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/minus.png" class="minus-icon" style="width:24px; height:24px;" alt="Menos">
+            </button>
+            <button class="plus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/plus.png" class="plus-icon" style="width:24px; height:24px;" alt="Mais">
+            </button>
+      </span>
+        </h2>
         <div class="ingredients">
           Fresh cream cheese, Mozzarella, Olives, Curry Chicken, zucchini
-          <span class="price">13.80 €</span>
         </div>
       </div>
       <br>
 
       <div class="pizza-item">
-        <h2>CHEDDAR & BACON - <span class="price">13.80 €</span></h2>
+        <h2>CHEDDAR & BACON - <span class="price">13.80 €</span>
+          <span class="action-group">
+            <button class="minus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/minus.png" class="minus-icon" style="width:24px; height:24px;" alt="Menos">
+            </button>
+            <button class="plus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/plus.png" class="plus-icon" style="width:24px; height:24px;" alt="Mais">
+            </button>
+      </span>
+        </h2>
         <div class="ingredients">
           Fresh cream, Mozzarella, Olives, Cheddar, Bacon
         </div>
@@ -104,7 +174,16 @@
       <br>
 
       <div class="pizza-item">
-        <h2>4 CHEESE - <span class="price">14.00 €</span></h2>
+        <h2>4 CHEESE - <span class="price">14.00 €</span>
+          <span class="action-group">
+                <button class="minus-btn" style="background:none; border:none; padding:0;">
+                <img src="./assets/minus.png" class="minus-icon" style="width:24px; height:24px;" alt="Menos">
+              </button>
+              <button class="plus-btn" style="background:none; border:none; padding:0;">
+                <img src="./assets/plus.png" class="plus-icon" style="width:24px; height:24px;" alt="Mais">
+              </button>
+          </span>
+        </h2>
         <div class="ingredients">
           Tomato Sauce, Mozzarella, Cheddar, Gorgonzola
         </div>
@@ -114,75 +193,148 @@
        <br>
         <br>
 
-    
+    <!-- DRINKS  -->
         
        <h2 class="menu-title">Drinks</h2>
            
     <div class="drinks">
-      <div class="drinks-item">
-        <h2>Coca-cola 330ml - <span class="price">1.50 €</span>
-        <span class="action-group">
-      <div class="simble-icon">
-      <img src="minus.png" class="minus-icon" />
-      <img src="plus.png" class="plus-icon" />
-      </div>
-    </span>
+      <div class="drinks-item" data-name="Coca-cola" data-price="1.50">
+        <h2> Coca-cola 330ml - <span class="price">1.50 €</span>
+          <span class="action-group">
+            <button class="minus-btn" aria-label="Remover 1" style="background:none; border:none; padding:0;">
+              <img src="./assets/minus.png" class="minus-icon" style="width:24px; height:24px;" alt="Menos">
+            </button>
+            <button class="plus-btn" aria-label="Adicionar 1" style="background:none; border:none; padding:0;">
+              <img src="./assets/plus.png" class="plus-icon" style="width:24px; height:24px;" alt="Mais">
+            </button>
+          </span>
         </h2>
-             
+      </div>
+   
+      <br>
+
+      
+      <div class="drinks-item">
+        <h2>
+          Fanta 330ml - <span class="price">1.50 €</span>
+          <span class="action-group">
+            <button class="minus-btn" data-name="Fanta 330ml" data-price="1.50" style="background:none; border:none; padding:0;">
+              <img src="./assets/minus.png" class="minus-icon" style="width:24px; height:24px;" alt="Menos">
+            </button>
+            <button class="plus-btn" data-name="Fanta 330ml" data-price="1.50" style="background:none; border:none; padding:0;">
+              <img src="./assets/plus.png" class="plus-icon" style="width:24px; height:24px;" alt="Mais">
+            </button>
+          </span>
+        </h2>
       </div>
       <br>
 
       <div class="drinks-item">
-        <h2>Fanta 330ml - <span class="price">1.50 €</span></h2>     
+        <h2>
+          Sprite 330ml - <span class="price">1.50 €</span>
+          <span class="action-group">
+            <button class="minus-btn" data-name="Sprite 330ml" data-price="1.50" style="background:none; border:none; padding:0;">
+              <img src="./assets/minus.png" class="minus-icon" style="width:24px; height:24px;" alt="Menos">
+            </button>
+            <button class="plus-btn" data-name="Sprite 330ml" data-price="1.50" style="background:none; border:none; padding:0;">
+              <img src="./assets/plus.png" class="plus-icon" style="width:24px; height:24px;" alt="Mais">
+            </button>
+          </span>
+        </h2>     
       </div>
       <br>
 
       <div class="drinks-item">
-        <h2>Sprite 330ml - <span class="price">1.50 €</span></h2>     
+        <h2>Beer 500ml - <span class="price">2.00 €</span>
+          <span class="action-group">
+            <button class="minus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/minus.png" class="minus-icon" style="width:24px; height:24px;" alt="Menos">
+            </button>
+            <button class="plus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/plus.png" class="plus-icon" style="width:24px; height:24px;" alt="Mais">
+            </button>
+          </span>
+        </h2>     
       </div>
       <br>
 
       <div class="drinks-item">
-        <h2>Beer 500ml - <span class="price">2.00 €</span></h2>     
+        <h2>Red Wine 250ml - <span class="price">2.00 €</span>
+          <span class="action-group">
+            <button class="minus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/minus.png" class="minus-icon" style="width:24px; height:24px;" alt="Menos">
+            </button>
+            <button class="plus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/plus.png" class="plus-icon" style="width:24px; height:24px;" alt="Mais">
+            </button>
+          </span>
+        </h2>     
       </div>
       <br>
 
       <div class="drinks-item">
-        <h2>Red Wine 250ml - <span class="price">2.00 €</span></h2>     
+        <h2>White Wine 250ml - <span class="price">2.00 €</span>
+          <span class="action-group">
+            <button class="minus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/minus.png" class="minus-icon" style="width:24px; height:24px;" alt="Menos">
+            </button>
+            <button class="plus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/plus.png" class="plus-icon" style="width:24px; height:24px;" alt="Mais">
+            </button>
+          </span>
+        </h2>     
       </div>
       <br>
 
       <div class="drinks-item">
-        <h2>White Wine 250ml - <span class="price">2.00 €</span></h2>     
-      </div>
-      <br>
-
-      <div class="drinks-item">
-        <h2>Water 500ml - <span class="price">1.00 €</span></h2>     
+        <h2>Water 500ml - <span class="price">1.00 €</span>
+          <span class="action-group">
+            <button class="minus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/minus.png" class="minus-icon" style="width:24px; height:24px;" alt="Menos">
+            </button>
+            <button class="plus-btn" style="background:none; border:none; padding:0;">
+              <img src="./assets/plus.png" class="plus-icon" style="width:24px; height:24px;" alt="Mais">
+            </button>
+          </span>
+        </h2>     
       </div>
       
+      
        </div>
-
+          
+       <!-- TOTAL  -->
+       
+    <div id="total">
+      <div id="resumo-itens"></div>
+      <div class="total-item">
+        <h2><span class="subtotal"> Subtotal</span> - <span class="price">0.00 €</span></h2>
+      
+      </div>
+      <button class="order-button">Order</button>
     </div>
+
+    
+
+
    
     <a href="https://wa.me/SEUNUMERO" class="whatsapp-link" target="_blank">
-      <img src="icon_whatsapp.png" alt="WhatsApp" class="whatsapp-icon" />
+      <img src="./assets/icon_whatsapp.png" alt="WhatsApp" class="whatsapp-icon" />
     </a>
 
-    <script src="script.js"></script>
+    <script src="js/index.js"></script>
   </body>
   
   
   <footer class="footer">
     <h2 >Follow us on social media:</h2>
     <div class="social-icons">
-      <a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt="Facebook" /></a>
-      <a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt="Instagram" /></a>
-      <a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt="Twitter" /></a>
-      <a href="https://www.twitter.com" target="_blank"><img src="tik-tok.png" alt="Twitter" /></a>
+      <a href="https://www.facebook.com" target="_blank"><img src="./assets/facebook.png" alt="Facebook" /></a>
+      <a href="https://www.instagram.com" target="_blank"><img src="./assets/instagram.png" alt="Instagram" /></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="./assets/twitter.png" alt="Twitter" /></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="./assets/tik-tok.png" alt="Twitter" /></a>
     </div>
     <br>
       <p>© 2025 Pizzeria Dev - All rights reserved.</p>
-    <p>By Bruno Juliano</p>
+    <p>By Bruno Juliano - Front End</p>
   </footer>
 </html>
