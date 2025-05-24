@@ -27,7 +27,8 @@ function handleClick(ev) {
 
 /* ---- 4. ATUALIZA RESUMO E SUBTOTAL ---- */
 function renderResumo() {
-  const resumoDiv = document.getElementById("total");
+  const resumoDiv = document.getElementsByClassName("total-item");
+  console.log(resumoDiv);
   resumoDiv.innerHTML = ""; // limpa lista
 
   let subtotal = 0;

@@ -230,7 +230,6 @@
   padding: 10px;
   width: 75%;
   color: rgb(9, 169, 118);
-
   border-radius: 10px;
   margin: 0 auto; /* Centraliza horizontalmente */
 }
@@ -288,6 +287,11 @@
   width: 40px; /* Ajuste o tamanho desejado */
   height: 40px; /* Ajuste o tamanho desejado */
   margin: 5px; /* Espaçamento entre os ícones */
+}
+
+.social-icons img:hover {
+  transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+  transition: transform 0.3s ease; /* Transição suave */
 }
 
 .whatsapp-link {
