@@ -10,7 +10,7 @@ document
 /* ---- 3. MANIPULADOR DE CLIQUE ---- */
 function handleClick(ev) {
   const isPlus = ev.currentTarget.classList.contains("plus-btn");
-  const itemEl = ev.currentTarget.closest(".pizza-item, .drink-item");
+  const itemEl = ev.currentTarget.closest(".pizza-item, .drinks-item");
 
   // dados vindos do HTML data-*
   const name = itemEl.dataset.name;
@@ -27,9 +27,8 @@ function handleClick(ev) {
 
 /* ---- 4. ATUALIZA RESUMO E SUBTOTAL ---- */
 function renderResumo() {
-  const resumoDiv = document.getElementsByClassName("total-item");
-  console.log(resumoDiv);
-  resumoDiv.innerHTML = ""; // limpa lista
+  const resumoItensDiv = document.getElementById("resumo-itens");
+  resumoItensDiv.innerHTML = ""; // limpa os itens do resumo
 
   let subtotal = 0;
 
@@ -37,17 +36,13 @@ function renderResumo() {
     const line = document.createElement("p");
     const totalItem = item.qty * item.price;
     line.textContent = `${item.qty} × ${name} − ${totalItem.toFixed(2)} €`;
-    resumoDiv.appendChild(line);
+    resumoItensDiv.appendChild(line);
     subtotal += totalItem;
   });
 
   // Se o carrinho estiver vazio, mostra uma mensagem
-  if (subtotal === 0) {
-    resumoDiv.textContent = "Carrinho vazio";
-  } else {
-    // Atualiza o subtotal também dentro da div total
-    const subtotalEl = document.createElement("p");
-    subtotalEl.textContent = "Subtotal: " + subtotal.toFixed(2) + " €";
-    resumoDiv.appendChild(subtotalEl);
+  const subtotalEl = document.querySelector("#total .total-item .price")
+  if(subtotalEl){
+    subtotalEl.textContent = subtotal.toFixed(2) + " €";
   }
 }
