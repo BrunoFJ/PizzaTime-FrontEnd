@@ -25,6 +25,41 @@ function handleClick(ev) {
   renderResumo();
 }
 
+function renderResumo() {
+  const resumoItensDiv = document.getElementById("resumo-itens");
+  resumoItensDiv.innerHTML = ""; // limpa os itens do resumo
+
+  let subtotal = 0;
+
+  // Lista fixa com a ordem dos itens
+  const itemOrder = [
+    "Pizza Margherita",
+    "Pizza Pepperoni",
+    "Pizza Quatro Queijos",
+    "Coca-Cola",
+    "Água",
+    "Suco de Laranja",
+  ];
+
+  // Itera sobre os itens na ordem especificada
+  itemOrder.forEach((name) => {
+    if (cart[name]) {
+      const item = cart[name];
+      const line = document.createElement("p");
+      const totalItem = item.qty * item.price;
+      line.textContent = `${item.qty} × ${name} − ${totalItem.toFixed(2)} €`;
+      resumoItensDiv.appendChild(line);
+      subtotal += totalItem;
+    }
+  });
+
+  // Atualiza o subtotal
+  const subtotalEl = document.querySelector("#total .total-item .price");
+  if (subtotalEl) {
+    subtotalEl.textContent = subtotal.toFixed(2) + " €";
+  }
+}
+
 /* ---- 4. ATUALIZA RESUMO E SUBTOTAL ---- */
 function renderResumo() {
   const resumoItensDiv = document.getElementById("resumo-itens");
@@ -41,8 +76,8 @@ function renderResumo() {
   });
 
   // Se o carrinho estiver vazio, mostra uma mensagem
-  const subtotalEl = document.querySelector("#total .total-item .price")
-  if(subtotalEl){
+  const subtotalEl = document.querySelector("#total .total-item .price");
+  if (subtotalEl) {
     subtotalEl.textContent = subtotal.toFixed(2) + " €";
   }
 }
