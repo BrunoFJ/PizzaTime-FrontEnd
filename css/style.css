@@ -7,7 +7,7 @@
 
 .container {
   position: relative;
-  background-color: white;
+  background-color: rgba(250, 250, 250, 0.533);
   padding: 2rem; /* Espaçamento interno */
   margin: auto auto; /* Espaçamento externo e centralização */
   max-width: 100%; /* Largura máxima do site */
@@ -17,13 +17,13 @@
 
 .container::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: -5px; /* Ajusta para fora do container */
   left: -25px;
   right: -25px;
   bottom: -25px;
   border: 25px solid transparent; /* Define a largura da borda */
-  background-image: url("../img_pizza7.jpeg"); /* Imagem de fundo */
+  background-image: url("../assets/img_pizza7.jpeg"); /* Imagem de fundo */
   background-size: cover;
   background-position: center;
   opacity: 0.3; /* Define a transparência da imagem de fundo */
@@ -69,11 +69,17 @@
 }
 
 .navbar a:hover {
-  color: #32cd5e; /* Cor ao passar o mouse */
+  color: rgb(94, 122, 75); /* Cor ao passar o mouse */
+  font-size: 30px;
+  transition: color 0.3s ease, font-size 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+  border-radius: 10px; /* Arredonda os cantos ao passar o mouse */
+  padding: 5px; /* Espaçamento interno ao passar o mouse */
+  background-color: rgba(236, 244, 228, 0.478);
 }
 
 .login {
-  margin-left: auto;
+  margin-left: auto; /* Alinha à direita */
 }
 
 .banner {
@@ -83,7 +89,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(74, 77, 72);
+  color: rgb(94, 122, 75);
   text-align: center;
 }
 
@@ -111,9 +117,9 @@
   padding: 20px;
   width: 75%;
   color: rgb(9, 169, 118);
-  background-color: #cf939381;
+  background-color: #cecbcb71;
   border-radius: 10px;
-  margin: 30px 0;
+  margin: 0 auto; /* Centraliza horizontalmente */
 }
 
 .menu {
@@ -135,7 +141,7 @@
 
 .price {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   color: rgb(9, 169, 118);
 }
 
@@ -162,7 +168,7 @@
 
 .plus-icon:hover,
 .minus-icon:hover {
-  transform: scale(1.3); /* Aumenta o tamanho ao passar o mouse */
+  transform: scale(1.4); /* Aumenta o tamanho ao passar o mouse */
 }
 
 .simble-icon {
@@ -175,8 +181,9 @@
   transition: transform 0.3s ease;
 }
 
+/*--- DRINKS ---*/
+
 .drinks {
-  display: inline-block;
   padding: 30px;
   color: #555756;
   background-color: #ecf4e47a;
@@ -185,6 +192,19 @@
   margin: 10px auto; /* Centraliza horizontalmente */
   width: 70%; /* Define uma largura apropriada */
   max-width: 1200px; /* Define uma largura máxima */
+}
+
+.drinks-item h2 {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start;  Não precisa se usar margin-left: auto */
+  gap: 10px;
+}
+
+.action-group {
+  display: flex;
+  margin-left: auto; /* Isso empurra os botões para a margem direita */
+  gap: 5px;
 }
 
 .drinks-item:hover {
@@ -199,6 +219,64 @@
   color: rgb(9, 169, 118);
 }
 
+.drinks-item h2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px; /* Espaço entre os elementos */
+}
+
+/* --- TOTAL --- */
+
+#total {
+  display: flex;
+  flex-direction: column; /* Empilha os elementos verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 10px;
+  width: 75%;
+  color: rgb(9, 169, 118);
+  border-radius: 10px;
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.total-item {
+  display: inline-block;
+  padding: 30px;
+  color: #435c40;
+  background-color: #ecf4e47a;
+  border-radius: 10px;
+  border: 2px solid #0e0e0f;
+  margin: 10px auto; /* Centraliza horizontalmente */
+  width: 70%; /* Define uma largura apropriada */
+  max-width: 1200px; /* Define uma largura máxima */
+}
+
+.order-button {
+  background-color: tomato; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Remove a borda padrão */
+  text-decoration: none;
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+  border-radius: 5px; /* Arredonda os cantos do botão */
+  font-size: 16px; /* Tamanho da fonte do botão */
+  font-weight: bold; /* Negrito */
+  justify-content: center; /* Centraliza o texto no botão */
+  display: flex; /* Necessário para o alinhamento do texto */
+}
+
+.order-button:hover {
+  background-color: #d32f2f; /* Cor de fundo ao passar o mouse */
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.subtotal {
+  margin-top: 20px;
+}
+
+/*--- FOOTER ---*/
+
 .footer {
   display: inline-block;
   text-align: center;
@@ -207,19 +285,25 @@
   padding: 20px;
   background-color: #639c62ab;
   color: white;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 .social-icons {
   display: flex;
   justify-content: center; /* Centraliza horizontalmente */
   gap: 20px; /* Espaçamento entre os ícones */
-  margin-top: 20px; /* Espaçamento superior */
 }
 
 .social-icons img {
   width: 40px; /* Ajuste o tamanho desejado */
   height: 40px; /* Ajuste o tamanho desejado */
   margin: 5px; /* Espaçamento entre os ícones */
+}
+
+.social-icons img:hover {
+  transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+  transition: transform 0.3s ease; /* Transição suave */
 }
 
 .whatsapp-link {
@@ -468,6 +552,11 @@
   display: flex; /* Necessário para o alinhamento do texto */
 }
 
+.submit:hover {
+  background-color: #148907; /* Cor de fundo ao passar o mouse */
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
 .newRegistration {
   font-size: 20px; /* Tamanho do texto */
   color: rgb(22, 205, 71); /* Cor do texto */
@@ -501,7 +590,8 @@
   justify-content: center; /* Centraliza o texto no botão */
   display: flex; /* Necessário para o alinhamento do texto */
 }
-.loginButton:hover {
+
+.homeButton:hover {
   background-color: #d32f2f; /* Cor de fundo ao passar o mouse */
   transition: background-color 0.3s ease; /* Transição suave */
 }
@@ -550,4 +640,9 @@
   font-weight: bold; /* Negrito */
   justify-content: center; /* Centraliza o texto no botão */
   display: flex; /* Necessário para o alinhamento do texto */
+}
+
+.registrationButton:hover {
+  background-color: #d32f2f; /* Cor de fundo ao passar o mouse */
+  transition: background-color 0.3s ease; /* Transição suave */
 }
