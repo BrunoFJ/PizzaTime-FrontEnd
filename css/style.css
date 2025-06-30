@@ -114,8 +114,8 @@
   flex-direction: column; /* Empilha os elementos verticalmente */
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
-  padding: 20px;
-  width: 75%;
+  padding: 10px;
+  width: 85%;
   color: rgb(9, 169, 118);
   background-color: #cecbcb71;
   border-radius: 10px;
@@ -324,6 +324,72 @@
 
 .whatsapp-icon:hover {
   transform: scale(1.2);
+}
+
+@media (max-width: 430px) {
+  .menu-section {
+    width: 98%;
+    padding: 5px;
+  }
+  .menu {
+    width: 98%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  .pizza-item h2,
+  .drinks-item h2 {
+    font-size: 18px;
+    gap: 5px;
+  }
+  .price {
+    font-size: 15px;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .navbar li {
+    margin: 8px 0;
+  }
+  .navbar a {
+    font-size: 22px;
+    padding: 6px 0;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 768px) {
+  .menu-section {
+    width: 95%;
+    padding: 8px;
+  }
+  .menu {
+    width: 95%;
+    padding: 18px;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .pizza-item h2,
+  .drinks-item h2 {
+    font-size: 22px;
+    gap: 8px;
+  }
+  .price {
+    font-size: 17px;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .navbar li {
+    margin: 10px 0;
+  }
+  .navbar a {
+    font-size: 26px;
+    padding: 8px 0;
+  }
 }
 
 @media (max-width: 768px) {
