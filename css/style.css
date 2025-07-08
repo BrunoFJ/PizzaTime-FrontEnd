@@ -271,7 +271,7 @@
   transition: background-color 0.3s ease; /* Transição suave */
 }
 
-.subtotal {
+.total {
   margin-top: 20px;
 }
 
@@ -590,6 +590,8 @@
 }
 
 .welcome {
+  display: flex; /* Ativa o Flexbox */
+  justify-content: center;
   font-size: 50px; /* Tamanho do título */
   font-style: italic;
   margin-bottom: 20px; /* Espaçamento entre o título e o texto */
